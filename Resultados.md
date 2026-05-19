@@ -51,6 +51,8 @@ El sistema permitió modificar dinámicamente las ganancias de cada banda.
 | Medios | × 1.0 |
 | Agudos | × 0.9 |
 
+<img width="1347" height="575" alt="image" src="https://github.com/user-attachments/assets/7d5325b8-bc6d-4982-86fc-a823debbb068" />
+
 Con esta configuración se obtuvo un efecto “Bass Boost”, aumentando significativamente la presencia de frecuencias bajas.
 
 ---
@@ -88,6 +90,7 @@ También se implementaron diferentes modos de visualización:
 - solo espectro FFT.
 
 ---
+
 
 ## Presets implementados
 
