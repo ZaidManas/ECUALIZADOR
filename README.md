@@ -1,8 +1,20 @@
 # Ecualizador espectral de audio usando DFT en Python
 
-Proyecto enfocado en la creación de un ecualizador de audio de tres bandas: Bajos, Medios y Agudos. 
+Proyecto enfocado en la creación de un ecualizador de audio de tres bandas: Bajos, Medios y Agudos.
 
 Este sistema permite convertir una señal de audio del dominio del tiempo al dominio de la frecuencia mediante el uso de la DFT/FFT. Una vez en el dominio frecuencial, se modifican directamente los coeficientes espectrales dependiendo de la banda seleccionada y, finalmente, se reconstruye la señal normalizada utilizando la transformada inversa (IFFT).
+
+## Descarga del proyecto
+
+Antes de ejecutar el proyecto, es necesario descargar y descomprimir el archivo:
+
+```text
+ECUALIZADOR.zip
+```
+
+Después de extraerlo, acceder a la carpeta del proyecto desde la terminal o editor de código.
+
+---
 
 ## Estructura
 
@@ -26,33 +38,42 @@ ecualizador/
 │   └── reporte.md     # Documentación final con marco teórico, resultados y conclusiones
 │
 └── requirements.txt   # Dependencias del proyecto
-
 ```
 
+---
+
 ## Instalación
+
+Instalar las dependencias necesarias:
 
 ```text
 pip install numpy scipy matplotlib soundfile sounddevice
 ```
 
+---
+
 ## Uso
 
-```text 
-Lectura y Análisis: Se carga un archivo .wav para obtener sus muestras, duración y frecuencia de muestreo.
+```text
+Lectura y Análisis:
+Se carga un archivo .wav para obtener sus muestras, duración y frecuencia de muestreo.
 
-Transformación: Se aplica la FFT para convertir la señal original al dominio de la frecuencia.
+Transformación:
+Se aplica la FFT para convertir la señal original al dominio de la frecuencia.
 
-Ecualización: Se configuran las ganancias manuales (o mediante sliders) para modificar los coeficientes espectrales, utilizando las siguientes bandas aproximadas:
+Ecualización:
+Se configuran las ganancias manuales (o mediante sliders) para modificar los coeficientes espectrales, utilizando las siguientes bandas aproximadas:
 
 Bajos: 20 – 250 Hz
-
 Medios: 250 – 4000 Hz
-
 Agudos: 4000 – 20000 Hz
 
-Reconstrucción: Se aplica la IFFT para volver al dominio temporal.
+Reconstrucción:
+Se aplica la IFFT para volver al dominio temporal.
 
-Exportación: Se guarda el nuevo archivo (audio_ecualizado.wav) evitando clipping o distorsión.
+Exportación:
+Se guarda el nuevo archivo (audio_ecualizado.wav) evitando clipping o distorsión.
 
-Análisis Visual: Se generan gráficas recomendadas para comparar la señal original contra la modificada y observar los cambios en el espectro antes y después de la ecualización.
+Análisis Visual:
+Se generan gráficas recomendadas para comparar la señal original contra la modificada y observar los cambios en el espectro antes y después de la ecualización.
 ```
