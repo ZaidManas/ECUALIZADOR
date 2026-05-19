@@ -9,7 +9,7 @@ Este sistema permite convertir una señal de audio del dominio del tiempo al dom
 Antes de ejecutar el proyecto, es necesario descargar y descomprimir el archivo:
 
 ```text
-ECUALIZADOR.zip
+Ecualizador.zip
 ```
 
 Después de extraerlo, acceder a la carpeta del proyecto desde la terminal o editor de código.
